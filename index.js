@@ -24,7 +24,7 @@ const client = new MongoClient(uri, {
   }
 });
 
-// json web token
+// json web token middleware
 const verifyJWT = (req, res, next) => {
   console.log('hitting verify JWT');
   // console.log(req.headers.authorization);
